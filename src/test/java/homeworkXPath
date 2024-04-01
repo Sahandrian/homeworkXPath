@@ -1,0 +1,56 @@
+Select navigation bar
+//nav
+
+Select top navigation site logo by element ID
+//*[@id='homeIcon']
+
+Select top navigation home button
+//*[@id='nav-link-home']
+
+Select top navigation login button
+//*[@id='nav-link-login']
+
+Select first feed container
+(//div[@class='post-feed-container'])[1]
+
+Select last feed container
+(//div[@class='post-feed-container'])[last()]
+
+Select user with profile pic x and name y
+//img[@src='https://i.imgur.com/xNbLDlF.png'] | //a[text()='IvetaSF']
+
+Select follow buttons
+//div[@class="col-6 follow-buttons"]
+
+Select first 3 follow buttons
+(//div[@class="col-6 follow-buttons"])[position()<4]
+
+Select post feed image
+//div[@class='post-feed-img']/img[@src='https://i.imgur.com/CVEyyEn.png']
+
+Selecting xpath for posts with any number of likes more than 0
+//strong[contains(text(), ' likes') and number(substring-before(text(), ' likes')) > 0]
+
+Selecting xpath for specific number of dislikes
+//strong[contains(text(), '0 dislikes')]
+
+Selecting xpath for the post date element while filtering it by hours or days
+//div[@class='post-date'][(contains(text(), 'days') or contains(text(), 'hours'))]
+
+Select footer area
+//footer
+
+Select version text that is anywhere inside the footer
+//footer//div[text()='Version: 2020.3.1.4200']
+
+Select text that is anywhere inside the footer
+//footer//h6[text()='Technologies:']
+
+Select footer image 1 by src and alt text
+//footer//img[@src='https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png' and @alt='upnetix-title']
+
+Select footer image 2 by src and alt text
+//footer//img[@src='https://cdn.worldvectorlogo.com/logos/angular-icon.svg' and @alt='upnetix-title']
+
+Select footer image 3 by src and alt text
+//footer//img[@src='https://d33wubrfki0l68.cloudfront.net/49c2be6f2607b5c12dd27f8ecc8521723447975d/f05c5/logo-small.cbbeba89.svg' and @alt='upnetix-title']
